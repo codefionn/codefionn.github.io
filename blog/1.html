@@ -1,0 +1,108 @@
+<!--Created by Fionn Langhans-->
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title style="color:Black">Hello, World - Fionn Langhans</title>
+		<style type="text/css">
+			H1 {border-width: 1; border: solid; text-align: center;}
+			body {
+				background-color: darkgrey;
+			}
+			code {
+				background-color: lightgrey;
+				color: black;
+				display: block;
+			}
+		</style>
+	</head>
+
+	<body>
+		<p><a href="/~langhans">Home</a></p>
+		<h1>Hello, World!</h1>
+
+		<h3>C (K&R C)</h3>
+		<pre><code>
+			#include &lt;stdio.h&gt;
+
+			main(argc, args) int argc; char* args[]; {
+				puts("Hello, World");
+				return 0;
+			}
+		</code></pre>
+				
+		<h3>C++</h3>
+		<pre><code>
+			#include &lt;iostream&gt;
+			using namespace std;
+
+			int main() {
+				cout &lt;&lt; "Hello, World!" &lt;&lt; endl;
+				return 0;
+			}
+		</code></pre>
+
+		<h3>Java</h3>
+		<pre><code>
+			public class ProgramMain {
+				public static final void main(String[] args) {
+					System.out.println("Hello, World!");
+				}
+			}
+		</code></pre>
+
+		<h3>Linux x86_64 asm (nasm, intel-style)</h3>
+		<pre><code>
+			section .data
+				msg db "Hello, World!",0ax
+				msglen db $-msg
+
+			section .text
+				global _start
+			_start:
+				mov rax, 1 ; sys_write, See linux/arch/x86/entry/syscalls/syscalls_64.tbl
+				mov rdi, 1 ; man write
+				mov rsi, msg
+				mov rdx, msglen
+				syscall
+				mov rax, 60 ; exit
+				mov rdi, 0
+				syscall
+		</code></pre>
+
+		<h3>Linux x86_64 asm (gas)</h3>
+		<pre><code>
+				.globl _start
+			.text
+			_start:
+				mov $1, %rax
+				mov $1, %rdi
+				mov $msg, %rsi
+				mov $msglen, %rdx
+				syscall
+
+				mov $60, %rax
+				mov $0, %rdi
+				syscall
+			.data
+			msg:
+				.ascii "Hello, World!\n"
+				msglen = . - msg
+		</pre></code>
+
+
+		<h3>Feder 1.0:</h3>
+		<pre><code>
+			include "stdio.fd"
+			io.println("Hello, World!")
+		</code></pre>
+
+		<h3>Feder 2.0 (in progess): <a href="https://codefionn.github.io/federlang/">Federlang</a></h3>
+		<pre><code>
+			$ import std
+			std.io.println("Hello, World!")
+		</code></pre>
+	</body>
+
+</html>
