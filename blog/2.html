@@ -23,6 +23,8 @@
 
 		<p><a href="http://asm.sourceforge.net/howto/gas.html">GAS (GCC ASM)</a></p>
 
+		<p><a href="https://en.wikibooks.org/wiki/X86_Assembly">Wikibooks x86 Assembly (Very good resources)</a></p>
+
 		<p><a href="https://en.wikibooks.org/wiki/X86_Assembly/GAS_Syntax">GAS X86 ASM Syntax (Wikibooks)</a></p>
 
 		<p><a href="https://en.wikipedia.org/wiki/X86_instruction_listings">x86 Instructions</a></p>
@@ -33,22 +35,23 @@
 
 		<p><a href="https://github.com/torvalds/linux/blob/master/arch/x86/entry/syscalls/syscall_64.tbl">How To Syscall</a> (Linux x86_64 assembler syscall instructions)</p>
 
-		<p><a href="https://uclibc.org/docs/psABI-x86_64.pdf">psABI x86_64</a> (General reference for the x86_64 ABI, like which registers to use)</p>
-		<p><a href="https://refspecs.linuxfoundation.org/elf/x86_64-abi-0.95.pdf">System V x86_64 ABI</a></p>
+		<p><a href="https://refspecs.linuxfoundation.org/elf/x86_64-abi-0.95.pdf">System V x86_64 ABI (Newest? resource)</a>
+		   <a href="https://uclibc.org/docs/psABI-x86_64.pdf">psABI x86_64 (Old)</a>
+		   <a href="https://software.intel.com/sites/default/files/article/402129/mpx-linux64-abi.pdf">System V ABI for AMD64 (VERY old)</a></p>
 
 		<p><a href="http://ref.x86asm.net/">x86 asm Reference</a></p>
 
-		<p><a href="https://en.wikipedia.org/wiki/Bit_Manipulation_Instruction_Sets">Bitmap Maniulation</a> (Important for Mark&Sweep GCs)
+		<p><a href="https://en.wikipedia.org/wiki/Bit_Manipulation_Instruction_Sets">Bitmap Maniulation</a> (Important for Mark&amp;Sweep GCs)
 		Note that abm (LZCNT) is only available to Intel Haswell (4th gen) or AMD Jaguar, Piledriver and newer.
 		<a href="https://en.wikipedia.org/wiki/Find_first_set">Find first set</a> flag.</p>
 
-		<p><a href="https://software.intel.com/sites/default/files/article/402129/mpx-linux64-abi.pdf">System V ABI for AMD64</a></p>
-
 		<h3>Performance:</h3>
 
-		<p>Not algorithmic performance but of assembler instructions.</p>
+		<p>How to be closer to hardware (or use what your hardware offers). Should
+		   be supported by every CPU which is not older than 30 years or so.</p>
 
 		<p><a href="https://mechanical-sympathy.blogspot.com/2013/02/cpu-cache-flushing-fallacy.html">CPU Cache Flushing Fallacy</a></p>
+		<p><a href="https://en.wikipedia.org/wiki/Cache_prefetching">Cache (hardware) prefetching</a> (or why locality of your code is important)</p>
 
 		<h3>Fun:</h3>
 
