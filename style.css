@@ -1,0 +1,20 @@
+H1 {border-width: 1; border: solid; text-align: center}
+body {
+	background-color: darkgrey;
+	max-width: 1080px;
+}
+
+#blog {
+	border-bottom: 2px solid black;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+code {
+	background-color: darkgrey;
+	color: black;
+	display: block;
+}
