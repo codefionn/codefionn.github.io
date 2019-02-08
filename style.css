@@ -13,8 +13,8 @@ body {
 	overflow: hidden;
 }
 
-code {
-	background-color: darkgrey;
+#code {
+	background-color: lightgrey;
 	color: black;
 	display: block;
 }

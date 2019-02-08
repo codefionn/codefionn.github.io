@@ -15,17 +15,17 @@
 		<h1>Hello, World!</h1>
 
 		<h3>C (K&R C)</h3>
-		<pre><code>
+		<pre><div id="code">
 			#include &lt;stdio.h&gt;
 
 			main(argc, args) int argc; char* args[]; {
 				puts("Hello, World");
 				return 0;
 			}
-		</code></pre>
+		</div></pre>
 
 		<h3>C++</h3>
-		<pre><code>
+		<pre><div id="code">
 			#include &lt;iostream&gt;
 			using namespace std;
 
@@ -33,19 +33,19 @@
 				cout &lt;&lt; "Hello, World!" &lt;&lt; endl;
 				return 0;
 			}
-		</code></pre>
+		</div></pre>
 
 		<h3>Java</h3>
-		<pre><code>
+		<pre><div id="code">
 			public class ProgramMain {
 				public static final void main(String[] args) {
 					System.out.println("Hello, World!");
 				}
 			}
-		</code></pre>
+		</div></pre>
 
 		<h3>Linux x86_64 asm (nasm, intel-style)</h3>
-		<pre><code>
+		<pre><div id="code">
 			section .data
 				msg db "Hello, World!",0ax
 				msglen db $-msg
@@ -61,10 +61,10 @@
 				mov rax, 60 ; exit
 				mov rdi, 0
 				syscall
-		</code></pre>
+		</div></pre>
 
 		<h3>Linux x86_64 asm (gas)</h3>
-		<pre><code>
+		<pre><div id="code">
 				.globl _start
 			.text
 			_start:
@@ -81,20 +81,20 @@
 			msg:
 				.ascii "Hello, World!\n"
 				msglen = . - msg
-		</pre></code>
+		</pre></div>
 
 
 		<h3>Feder 1.0:</h3>
-		<pre><code>
+		<pre><div id="code">
 			include "stdio.fd"
 			io.println("Hello, World!")
-		</code></pre>
+		</div></pre>
 
 		<h3>Feder 2.0 (in progess): <a href="https://codefionn.github.io/federlang/">Federlang</a></h3>
-		<pre><code>
+		<pre><div id="code">
 			$ import std
 			std.io.println("Hello, World!")
-		</code></pre>
+		</div></pre>
 	</body>
 
 </html>
