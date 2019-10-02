@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+
+		<title style="color:Black">Assembler - Fionn Langhans</title>
+		<link rel="stylesheet" href="../style.css">
+	</head>
+
+	<body>
+		<p><a href="../index.html">Home</a></p>
+		<h1>Gentoo (Linux)</h1>
+
+		<h3>Use flags</h3>
+
+		While you don't *have* to use these use-flags, you most definitly want
+		to (on a user system):
+
+		<p>cryptsetup - Setting and using encrypted drives</p>
+		<p>policykit - (Today's polkit), for authorization (unpriv. to priv.)</p>
+		<p>udisks - Normal users can mount drives (requires policykit)</p>
+		<p>X, xcb, opengl - Graphics with Xorg</p>
+		<p>ssl - Encryption stuff</p>
+		<p>threads, openmp - Parallalism</p>
+		<p>unicode, icu, cjk - International symbols/software, ...</p>
+		<p>alsa, pulseaudio - Audio (while you don't need to use pulseaudio, it's a pain without pulseaudio)</p>
+		<p>a52, aac, wavpack, encode, vorbis, flac, lame - Audio and video codecs</p>
+		<p>jpeg png imagemagick gif - The same for images</p>
+
+		<h3>Init system</h3>
+
+	 	I'm using systemd because most Linux software package target it. The
+		standard init system is OpenRC (it's fun to work with and provides
+		more choices and is closer to the UNIX software idiom). You can also
+		choose basic init sytems like *runit* (Void Linux, anyone?).
+
+		<h3>Custom Linux Kernel</h3>
+		
+		That's the real fun using Gentoo: You can easily setup your custom
+		Linux Kernel and even live directly on the (*stable*) git releases. 
+		The real fun starts if you want to omit things like *initramfs*
+		(initial ramdisk to provide firmware), increase the security of the
+		kernel or optimize the boot time.
+	</body>
+</html>
